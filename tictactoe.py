@@ -1,4 +1,8 @@
- import random, time
+# Written by Shane Mitravitz for SuperNOVA at Dalhousie University, 2022
+# smitravitz@superstaff.ca
+# www.supernova.dal.ca
+
+import random, time
 
 def display_board(values, choices, print_choices):
   print("-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-")
