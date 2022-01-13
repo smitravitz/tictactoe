@@ -41,9 +41,9 @@ def check_if_won():
   ##  4  5  6
   ##  7  8  9
 
-  ##  top_left   top_mid	top_right
-  ##  mid_left   mid_mid	mid_right
-  ##  bot_left   bot_mid	bot_right
+  ##  top_left   top_mid   top_right
+  ##  mid_left   mid_mid   mid_right
+  ##  bot_left   bot_mid   bot_right
 
   ## 3 checks for horizontals:   [1-2-3] + [4-5-6] + [7-8-9]
   ## 3 checks for verticals:    [1-4-7] + [2-5-8] + [3-6-9]
