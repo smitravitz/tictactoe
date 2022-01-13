@@ -1,20 +1,20 @@
-## Tic Tac Toe Tutorial
-## Initial template
+## Tic Tac Toe Tutorial Template
 
 import random, time
 
-## You can customize the display_board method to present the board differently, but this is provided to save time!
+## You can customize this display_board() method to see the board differently, provided to save time!
 def display_board(values, choices, print_choices):
+
   print("-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-")
   
-  ## All 9 values are intialized as " " (single space.) As players make choices, they are replaced one-by-one with either "X" or "O"
+  ## As players make choices, values are replaced one-by-one with either "X" or "O"
   print("Game Board")
   print("___________________\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[0], values[1], values[2]))
   print("|_____|_____|_____|\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[3], values[4], values[5]))
   print("|_____|_____|_____|\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[6], values[7], values[8]))
   print("|_____|_____|_____|")
 
-  ## We use print_choices parameter only when the player makes a decision (computer doesn't need to see.)
+  ## We only want to see the numbered choices when the player makes a decision (computer doesn't need.)
   if print_choices:
     print("\nChoices by Number")
     print("_____________")
@@ -37,19 +37,19 @@ def check_if_draw():
 def check_if_won():
 
   ## Board coordinates
-  ## 1  2  3
-  ## 4  5  6
-  ## 7  8  9
+  ##  1  2  3
+  ##  4  5  6
+  ##  7  8  9
 
-  ## top_left,	top_mid,		top_right
-  ## mid_left,	mid_mid,		mid_right
-  ## bot_left,	bot_mid,		bot_right
+  ##  top_left   top_mid		top_right
+  ##  mid_left   mid_mid		mid_right
+  ##  bot_left   bot_mid		bot_right
 
-  ## 3 checks for horizontals.   [1-2-3] + [4-5-6] + [7-8-9]
-  ## 3 checks for verticals.     [1-4-7] + [2-5-8] + [3-6-9]
-  ## 2 checks for diagonals.     [1-5-9] + [3-5-7]
+  ## 3 checks for horizontals:   [1-2-3] + [4-5-6] + [7-8-9]
+  ## 3 checks for verticals:    [1-4-7] + [2-5-8] + [3-6-9]
+  ## 2 checks for diagonals:    [1-5-9] + [3-5-7]
 
-  ## 3+3+2 = 8 total checks to confirm or deny there is a winner
+  ## 3+3+2 = 8 total checks to confirm or deny there is a winner!
 
 
 def declare_winner(winner):
