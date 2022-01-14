@@ -7,15 +7,9 @@ import random, time
 def display_board(values, choices, print_choices):
   print("-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-")
   print("Game Board")
-  print("___________________")
-  print("|     |     |     |")
-  print("|  {}  |  {}  |  {}  |".format(values[0], values[1], values[2]))
-  print("|_____|_____|_____|")
-  print("|     |     |     |")
-  print("|  {}  |  {}  |  {}  |".format(values[3], values[4], values[5]))
-  print("|_____|_____|_____|")
-  print("|     |     |     |")
-  print("|  {}  |  {}  |  {}  |".format(values[6], values[7], values[8]))
+  print("___________________\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[0], values[1], values[2]))
+  print("|_____|_____|_____|\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[3], values[4], values[5]))
+  print("|_____|_____|_____|\n|     |     |     |\n|  {}  |  {}  |  {}  |".format(values[6], values[7], values[8]))
   print("|_____|_____|_____|")
 
   if print_choices:
