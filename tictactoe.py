@@ -118,7 +118,6 @@ def declare_winner(winner):
   if winner == "X":
     print("Player, YOU WIN!")
   elif winner == "O":
-    display_board(values, choices, 0)
     print("Nooo! The robot menace wins... This time!")
   print("Thanks for playing!!!\n")
   
@@ -147,6 +146,7 @@ def main():
     print("The computer says: Nice move, but now it's MY TURN!\n")
     time.sleep(3)
     get_computer_choice()
+    display_board(values, choices, 0)
     if check_game_over():
       return
 
