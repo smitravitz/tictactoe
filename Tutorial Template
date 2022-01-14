@@ -1,4 +1,16 @@
+# Written by Shane Mitravitz for SuperNOVA at Dalhousie University, 2022
+# smitravitz@superstaff.ca
+# www.supernova.dal.ca
+
 ## Tic Tac Toe Tutorial Template
+
+## OVERVIEW OF OUR METHODS & THE PROBLEMS THEY SOLVE.
+## Print the game board & legal choices				display_board(values, choices, print_choices)
+## Get player input & error checks						get_player_choice() , get_computer_choice()
+## Update the game board with player input    editing choices and values lists inside get_player_choice() , get_computer_choice()
+## Detect a win or draw to end the game!			check_if_draw() , check_if_won() , declare_winner(winner), check_game_over
+## And main() method will run the whole program!
+
 
 import random, time
 
